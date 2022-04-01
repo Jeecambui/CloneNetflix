@@ -18,6 +18,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default{
     getHomeList: async () => {
         return [
