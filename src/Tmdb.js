@@ -19,12 +19,12 @@ const basicFetch = async (endpoint) => {
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default{
+export default {
     getHomeList: async () => {
-        return [
+        return[
             {
                 slug: 'originals',
-                title: 'Original do Netflix',
+                title: 'Originais do Netflix',
                 items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -35,7 +35,7 @@ export default{
             {
                 slug: 'toprated',
                 title: 'Em Alta',
-                items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'action',
@@ -59,9 +59,31 @@ export default{
             },
             {
                 slug: 'documentary',
-                title: 'Documentarios',
+                title: 'Documentario',
                 items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
+            },
+        ];
+    },
+    getMovieInfo: async (movieId, type) => {
+        let info = {};
+
+        if(movieId) {
+            // eslint-disable-next-line default-case
+            switch(type) {
+                case 'movie':
+                    info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                break;
+                case 'tv':
+                    info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                break;
+                default:
+                    info = null;
+                break;
             }
-        ]
+        }
+
+        return info;
     }
+
+
 }

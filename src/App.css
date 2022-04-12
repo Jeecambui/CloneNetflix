@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+}
+
+.lists{
+    margin-top: -150px;
+}
