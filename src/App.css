@@ -29,3 +29,15 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.socials{
+    top: 1px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials img{
+    height: 100%;
+}

@@ -4,6 +4,8 @@ import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -63,9 +65,21 @@ export default () => {
       </section>
 
       <footer>
-        Feito com <span role="img" aria-label="coração">❤️</span> por Jef<br/>
-        Direitos de imagem para Netflix<br/>
-        Dados pegos do site Themoviedb.org
+        <div>
+          Feito com <span role="img" aria-label="coração">❤️</span> por Jef<br/>
+          Direitos de imagem para Netflix<br/>
+          Dados pegos do site Themoviedb.org
+        </div>
+
+        <br></br>
+
+        <div class="box images">
+            <div className='socials'>
+                <a href="https://github.com/Jeecambui"><img src="https://site-responsivo-marvel.vercel.app/img/github.png" alt="Github"></img></a>
+                <a href="https://www.linkedin.com/in/jefersoncambui/"><img src="https://site-responsivo-marvel.vercel.app/img/linkedin.png" alt="LinkedIn"></img></a>
+            </div>
+        </div>
+
       </footer>
 
       {movieList.length <= 0 &&
@@ -73,7 +87,6 @@ export default () => {
           <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif" width="100%" alt="Carregando" />
         </div>      
       }
-
     </div>
   );
 }
