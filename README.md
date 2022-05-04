@@ -52,6 +52,8 @@ $ npm start
 
 <br>
 Feito com carinho ♥ por Jeferson Cambui <a href="https://www.linkedin.com/in/jefersoncambui/"><strong>:wave: Toca aqui!</a></strong>
+<br>
+e creditos ao professor Bonieky Lacerda do canal no <a href="https://www.youtube.com/channel/UCw9mYSlqKRXI6l4vH-tAYpQ">youtube</a> onde tive direcionamento para o projeto.
 
 
 [nodejs]: https://nodejs.org/
