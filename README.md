@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
@@ -25,9 +25,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 -  [Material-UI](https://mui.com/)
 -  [Material-UI-Icons](https://mui.com/material-ui/icons/)
 -  [VS Code][vc]
-
 <br>
-## :information_source: Como Usar
+
+
+## :information_source: Como usar
 
 Para clonar e executar está aplicação, você precisa [Git](https://git-scm.com), [Node.js v16.14][nodejs] ou superior + [npm 8.3.1][npm]. Pela linha de comando:
 
